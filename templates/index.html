@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8">
+
+        <title>SGSI</title>
+        <!-- <base href="/" /> -->
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+        <script src="../static/js/vendor/angular.min.js"></script>
+        <script src="../static/js/vendor/angular-route.js"></script>
+        <script src="../static/js/App.js"></script>
+        <script src="../static/js/controllers/usuario-controller.js"></script>
+
+    </head>
+    <body>
+        <h1>Página inicial</h1>
+        <p>To tentando inserir o conteúdo da página static/view/usuario.html na div abaixo</p>
+        <a href="./usuario">Inserir view através da rota /usuario</a>
+        <div id="conteudo-view" ng-view="ng-view">
+            <p>Esse texto vai ser subtituido pelo conteúdo de /usuario</p>
+        </div>
+        <!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file (Remove 'http:' if you have SSL) -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>!window.jQuery && document.write(decodeURI('%3Cscript src="../static/js/vendor/jquery-1.11.1.min.js"%3E%3C/script%3E'));</script>
+    </body>
+</html>
